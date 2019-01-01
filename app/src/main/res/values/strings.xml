@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestWanAndroid</string>
+    <string name="opendrawer">opendrawer</string>
+    <string name="closedrawer">closedrawer</string>
+</resources>
