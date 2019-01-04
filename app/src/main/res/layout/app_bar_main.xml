@@ -2,25 +2,30 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:background="#BEBEBE"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:navigationIcon="@drawable/nav_icon"
-        app:title="WanAndroid"
-        app:titleTextColor="@color/colorPrimary"
-        ></android.support.v7.widget.Toolbar>
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:background="#BEBEBE"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:navigationIcon="@drawable/nav_icon"
+    app:title="WanAndroid"
+    app:titleTextColor="@color/colorPrimary"
+    ></android.support.v7.widget.Toolbar>
+
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1">
+    </FrameLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -31,6 +36,7 @@
             android:orientation="horizontal"
             android:weightSum="4">
             <RelativeLayout
+                android:id="@+id/rl_home"
                 android:gravity="center_horizontal"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -48,6 +54,7 @@
                     android:text="首页"/>
             </RelativeLayout>
             <RelativeLayout
+                android:id="@+id/rl_knowledge"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -67,6 +74,7 @@
                     android:text="知识体系"/>
             </RelativeLayout>
             <RelativeLayout
+                android:id="@+id/rl_nav"
             android:gravity="center_horizontal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -84,6 +92,7 @@
                 android:text="导航"/>
         </RelativeLayout>
             <RelativeLayout
+                android:id="@+id/rl_project"
             android:gravity="center_horizontal"
             android:layout_width="0dp"
             android:layout_height="match_parent"
