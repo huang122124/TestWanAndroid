@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:id="@+id/smart_refresh"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
     <LinearLayout
+        android:background="#E0EEEE"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -13,10 +15,20 @@
         android:id="@+id/home_banner"
         android:layout_width="match_parent"
         android:layout_height="150dp"></com.youth.banner.Banner>
+        <ProgressBar
+            android:layout_marginTop="10dp"
+            android:id="@+id/home_progressbar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"/>
     <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:padding="3dp"
         android:id="@+id/home_newslist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        ></android.support.v7.widget.RecyclerView></LinearLayout>
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        ></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
 
 </com.scwang.smartrefresh.layout.SmartRefreshLayout>

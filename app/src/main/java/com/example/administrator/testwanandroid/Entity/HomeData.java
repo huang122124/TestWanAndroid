@@ -6,6 +6,7 @@ public class HomeData {
     private String title;
     private String desc;
     private String niceDate;
+    private String url;
 
     public String getAuthor() {
         return author;
@@ -45,5 +46,13 @@ public class HomeData {
 
     public void setNiceDate(String niceDate) {
         this.niceDate = niceDate;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
